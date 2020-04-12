@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Fruit Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='theme.css')}}">
+</head>
+<body style='display: flex; justify-content: center;'>
+    <div class="main">    
+        <h1>Dojo Fruit Store</h1>
+        <form action="/checkout" method="post">
+            <h2 class='i'>What would you like to buy?</h2>
+            <table class="table table-bodered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Fruit Name</th><th scope='col'>Quality</th>
+                    </tr>
+                </thead>
+                <tbody class="table-striped table-hover">
+                    <tr>
+                        <td><label for="Strawberry">Strawberry</label></td>
+                        <td><input type="number" name="Strawberry" id="" min='0'></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Raspberry">Raspberry</label></td>
+                        <td><input type="number" name="Raspberry" min='0'></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Apple">Apple</label></td>
+                        <td><input type="number" name='Apple' min='0'></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class='i'>Your Information</p>
+            <div class="bottom">
+                <label for="name">Name:</label>
+                <input type="text" name="name">
+                <label for="id">Your Student ID</label>
+                <input type="text" name='s_ID'>
+                <button class="btn btn-success btn-primary btn-outline-dark btn-lg" type="submit">Buy me stuff</button>
+            </div>
+        </form>
+    </div>
+    <div class="side">
+        <h3>Welcome to Dojo Fruit Store!</h3>
+        <p>Your dojo decided to buy fruit for all the students! Please use this app to tell us what you would like to have! Once we get your order, we'll change your student account automatically</p>
+        <p>Dojo Fruit Store is proudly built using Flask.</p>
+    </div>
+
+    
+</body>
+</html>

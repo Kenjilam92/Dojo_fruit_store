@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+h1{
+    font-size: x-large;
+}
+h2{
+    font-size: larger;
+}
+h3{
+    font-size: large;
+}
+.b{
+    font-weight: bold;
+}
+.i{
+    text-decoration: underline;
+}
+.table{
+    width: 100%;
+}
+.side{
+    background-color: rgb(111, 122, 231);
+    display: inline-block;
+    width: 20%;
+    margin: 20px;
+    padding: 30px;
+}
+.main{
+    display: inline-block;
+    width: 70%;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 10px;
+}
+.bottom button{
+    grid-column: 2;
+    justify-self: right;
+    width: 30%;
+}
